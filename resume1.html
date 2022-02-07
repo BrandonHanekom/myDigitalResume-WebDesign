@@ -2,26 +2,29 @@
 <html>
   <head>
     <title>Brandon Hanekom's Resume</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
   </head>
   <body>
-   <h1><strong>Brandon Hanekom</strong></h1>
-   
-   <p>An introductory personal statement.</p>
-   
-   <br>
   
-   <img src="./Images/profile photo placeholder.jpg"
+   <header id="heading">
+     <img id="placeholder" src="./Images/profile photo placeholder.jpg"
+     width="200px"
+     alt="Profile photo placeholder">
+     <h1>Brandon Hanekom</h1>
+     <p>An introductory personal statement. </p>
+   </header>
 
-   width="200px"
-
-   alt="placeholder image">
-
-   <ul>
-     <li> <a href="#education">Education</a></li>
-     <li><a href="#experience">Experience</a></li>
-     <li><a href="#skills">Skills</a></li>
-   </ul>
+  <div id="sidebar">
+    <nav>
+      <h2>Menu</h2>
+      <ul class="nav-menu">
+        <li> <a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </nav>
+  </div>
+   
 
    <h2 id="education"><strong>Education</strong></h2>
    
@@ -60,9 +63,13 @@
        <li>Skill 4</li>
    </ul>
 
-   <h2>Contact Details</h2>
-   
-   <p><a href="mailto:brandonhanekom00@gmail.com">Gmail</a></p>
+   <footer>
+
+    <h3>Contact Details</h3>
+    <ul>
+      <a href="mailto:brandonhanekom00@gmail.com">Gmail</a>
+    </ul>
+   </footer>
 
   </body>
 </html>
