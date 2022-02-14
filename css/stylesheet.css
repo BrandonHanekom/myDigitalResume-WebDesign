@@ -53,6 +53,10 @@ padding: 0%
   margin: 2rem;
 }
 
+#linkedin {
+  border: 20px;
+}
+
 footer {
   background-color: #4d7c5f;
   text-align: center;
