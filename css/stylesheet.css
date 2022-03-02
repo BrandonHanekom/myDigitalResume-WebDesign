@@ -4,6 +4,7 @@ body{
   background-color: #FCF7F8;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 header {
@@ -11,6 +12,14 @@ header {
   background-color: #4d7c5f;
   justify-content: center;
   padding: 2rem;
+}
+
+#bg {
+  background-image: url();
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .styling {
