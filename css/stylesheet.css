@@ -1,29 +1,37 @@
 body{
   font-family: sans-serif;
   font-size:110%;
-  background-color: black;
+  background-color: #DDD8C4;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
+.jumbotron {
+  background-color: #69A297;
+}
+
+.btn {
+  background-color: #50808E;
+  color: #DDD8C4;
+  border: none;
+}
+
+#button:hover {
+  background-color: #84B59F;
+  transition: 0.7s;
+  color: #DDD8C4;
+}
+
 header {
   text-align: center;
-  background-color: #EE2F7C;
+  background-color: #84B59F;
   justify-content: center;
   padding: 2rem;
 }
 
-#bg {
-  background-image: url(https://wallpaper.dog/large/20512965.png);
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .styling {
-  color: whitesmoke;
+  color: #DDD8C4;
 }
 
 .main {
@@ -36,12 +44,12 @@ header {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 5px solid whitesmoke
+  border: 5px solid #DDD8C4
 }
 
 #sidebar {
 width: 20%;
-background-color: black;
+background-color: #A3C9A8;
 padding: 1rem;
 color: black;
 
@@ -50,7 +58,7 @@ color: black;
 nav {
   width: fit-content;
   text-align: left;
-  background-color: black;
+  background-color: #A3C9A8;
 }
 
 .navList {
@@ -60,23 +68,59 @@ padding: 0%
 
 #contents {
   margin: 2rem;
-  color: whitesmoke;
+  color: #DDD8C4;
 }
 
 #education {
-background: whitesmoke;
-color: #000;
-
+  display: inline-block;
+  width: 100%;
+  height: fit-content;
+  background-color: #50808E;
+  margin: 5px;
+  text-align: justify;
+  padding: 25px;
 }
 
 #experience {
-  background: whitesmoke;
-  color: #000;
+  display: inline-block;
+  width: 100%;
+  height: fit-content;
+  background-color: #50808E;
+  margin: 5px;
+  text-align: justify;
+  padding: 25px;
 }
 
-#skills {
-  background: whitesmoke;
-  color: #000;
+#skills {display: inline-block;
+  width: 100%;
+  height: fit-content;
+  background-color: #50808E;
+  margin: 5px;
+  text-align: justify;
+  padding: 25px;
+}
+
+@media screen and (max-width:768px) {
+  .content { 
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    background-color: #50808E;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .content {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    background-color: #50808E;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
 
 .icons {
@@ -93,6 +137,7 @@ color: #000;
 }
 
 footer {
-  background-color: #B8B8F3;
+  background-color: #69A297;
   text-align: center;
+  padding: 25px;
 }
