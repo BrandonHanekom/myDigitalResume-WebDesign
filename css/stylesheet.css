@@ -1,3 +1,15 @@
+body, html {
+  height: 100%;
+}
+
+.bg {
+  background-image: url('/Images/websitebackground-large.jpg') no-repeat;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 body{
   font-family: sans-serif;
   font-size:110%;
