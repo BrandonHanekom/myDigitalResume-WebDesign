@@ -1,49 +1,49 @@
-body, html {
+body,
+html {
   height: 100%;
 }
 
 .bg {
-  background-image: url('/Images/websitebackground-large.jpg') no-repeat;
-  height: 100%;
+  background-image: url("https://i.redd.it/vxb5lk0zxra71.png");
+  height: fit-content;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  width: fit-content;
 }
 
-body{
+#navBar {
+  width: 100%;
+}
+
+body {
   font-family: sans-serif;
-  font-size:110%;
-  background-color: #DDD8C4;
+  font-size: 110%;
+  background-color: white;
   display: flex;
   flex-direction: column;
   height: 100%;
+  text-align: center;
 }
 
-.jumbotron {
-  background-color: #69A297;
+#home {
+  background-color: rgb(197, 59, 105);
 }
 
-.btn {
-  background-color: #50808E;
-  color: #DDD8C4;
+#button {
+  background-color: white;
+  color: black;
   border: none;
 }
 
 #button:hover {
-  background-color: #84B59F;
+  background-color: rgb(62, 173, 201);
   transition: 0.7s;
-  color: #DDD8C4;
-}
-
-header {
-  text-align: center;
-  background-color: #84B59F;
-  justify-content: center;
-  padding: 2rem;
+  color: white;
 }
 
 .styling {
-  color: #DDD8C4;
+  color: black;
 }
 
 .main {
@@ -56,100 +56,81 @@ header {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 5px solid #DDD8C4
-}
-
-#sidebar {
-width: 20%;
-background-color: #A3C9A8;
-padding: 1rem;
-color: black;
-
+  border: 5px solid white;
 }
 
 nav {
   width: fit-content;
   text-align: left;
-  background-color: #A3C9A8;
+  background-color: white;
 }
 
-.navList {
-list-style-type: none;
-padding: 0%
+.collapse {
+  background-color: white;
+  text-align: center;
 }
 
-#contents {
+#start {
   margin: 2rem;
-  color: #DDD8C4;
+  color: white;
 }
 
-#education {
+.content {
   display: inline-block;
   width: 100%;
   height: fit-content;
-  background-color: #50808E;
+  background-color: rgb(62, 173, 201);
   margin: 5px;
   text-align: justify;
   padding: 25px;
 }
 
-#experience {
-  display: inline-block;
-  width: 100%;
-  height: fit-content;
-  background-color: #50808E;
-  margin: 5px;
-  text-align: justify;
-  padding: 25px;
-}
-
-#skills {display: inline-block;
-  width: 100%;
-  height: fit-content;
-  background-color: #50808E;
-  margin: 5px;
-  text-align: justify;
-  padding: 25px;
-}
-
-@media screen and (max-width:768px) {
-  .content { 
+@media screen and (max-width: 768px) {
+  .content {
     display: inline-block;
     width: fit-content;
     height: fit-content;
-    background-color: #50808E;
+    background-color: rgb(62, 173, 201);
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width: 550px) {
   .content {
     display: block;
     width: fit-content;
     height: fit-content;
-    background-color: #50808E;
+    background-color: rgb(62, 173, 201);
     margin-left: auto;
     margin-right: auto;
   }
-  
 }
 
-.icons {
-  margin: 1px;
+.card {
+  height: fit-content;
+  border: none;
 }
 
-#gmail {
-  width: 100px;
+.fa {
+  padding: 10px;
+  font-size: 50px;
+  width: 50px;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 25%;
+  border: 5px solid white;
+  color: white;
 }
 
-#linkedin {
-  border-radius: 50%;
-  width: 60px;
+.fa:hover {
+  background-color: white;
+  transition: 0.7s;
+  color: rgb(197, 59, 105);
 }
 
 footer {
-  background-color: #69A297;
+  background-color: rgb(197, 59, 105);
   text-align: center;
   padding: 25px;
 }

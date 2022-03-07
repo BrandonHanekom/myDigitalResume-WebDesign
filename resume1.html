@@ -18,91 +18,83 @@
 
     <style class="bg">
       body {
-        background-image: url("/Images/websitebackground-large.jpg");
+        background-image: url("https://i.redd.it/vxb5lk0zxra71.png");
       }
     </style>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+    />
   </head>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+    <a class="navbar-brand">Explore</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"> </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#contents"
+            >Home <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:brandonhanekom00@gmail.com"
+            >E-Mail
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Sections
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#education">Education</a>
+            <a class="dropdown-item" href="#experience">Experience</a>
+            <a class="dropdown-item" href="#skills">Skills</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button
+          class="btn btn-outline-success my-2 my-sm-0"
+          id="button"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+  </nav>
 
   <body>
     <div class="jumbotron" id="home">
-      <h1 class="display-4">myDigitalResume</h1>
-      <p class="lead">
-        Here, you can learn about my education, experience and skills.
-      </p>
-      <hr class="my-4" />
-      <p>Feel free to take a look at what I can bring to the table.</p>
-      <a
-        class="btn btn-primary btn-lg"
-        href="#heading"
-        role="button"
-        id="button"
-        >Get Started</a
-      >
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Explore</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#heading"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mailto:brandonhanekom00@gmail.com"
-              >E-Mail</a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Sections
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#education">Education</a>
-              <a class="dropdown-item" href="#experience">Experience</a>
-              <a class="dropdown-item" href="#skills">Skills</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button
-            class="btn btn-outline-success my-2 my-sm-0"
-            id="button"
-            type="submit"
-          >
-            Search
-          </button>
-        </form>
-      </div>
-    </nav>
-
-    <header id="heading">
       <img
         id="profilePhoto"
         src="./Images/ResumePhoto.jpg"
@@ -113,11 +105,28 @@
         Team player with strong communication skills and problem solving
         aptitude.
       </p>
-    </header>
+      <a class="btn btn-primary btn-lg" href="#start" role="button" id="button"
+        >View</a
+      >
+    </div>
 
     <main class="main">
-      <div class="container" id="contents">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <style>
+        #grid {
+          display: grid;
+          grid-template-rows: 1fr;
+          grid-template-columns: 1fr;
+          grid-gap: 5px;
+        }
+        #grid > div {
+          font-size: small;
+          padding: 5px;
+          background-color: transparent;
+          text-align: center;
+        }
+      </style>
+      <div class="container" id="start">
+        <div class="row align-items-center" id="grid">
           <div class="col">
             <section class="content" id="education">
               <h2 class="display-7">Education</h2>
@@ -158,15 +167,17 @@
               </h3>
 
               <ul>
-                <li>
+                <li class="text-center">
                   Assist and advise costumers on suitable products that would
                   accommodate their needs.
                 </li>
-                <li>Daily balancing of cash received and credit card slips.</li>
+                <li class="text-center">
+                  Daily balancing of cash received and credit card slips.
+                </li>
                 <li>
                   Ensure goods are in stock and ready to go out for deliveries.
                 </li>
-                <li>
+                <li class="text-center">
                   Oversee production and packaging of products in order to
                   guarantee goods are up to standard.
                 </li>
@@ -189,27 +200,41 @@
           </div>
         </div>
       </div>
+
+      <div class="card mb-3" style="max-width: 240px">
+        <div class="row no-gutters">
+          <div class="col-md-4 bg-light">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/768px-Unofficial_JavaScript_logo_2.svg.png?20141107110902"
+              class="card-img"
+              alt="JavaScript Logo"
+            />
+          </div>
+          <div class="col-md-8 bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Soon to add JavaScript as a skill!</h5>
+              <p class="card-text">
+                Over the next few weeks I will be learning more about
+                JavaScript.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last Updated March 7th 2022</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-      <h3 class="styling">Contact Details</h3>
+      <h3 class="styling">Contact Me Here</h3>
       <ul>
-        <a href="https://www.linkedin.com/in/brandon-hanekom-b0b855231/">
-          <img
-            class="icons"
-            id="linkedin"
-            src="Images/linkedin.png"
-            alt="Brandon Hanekom's LinkedIn"
-          />
-        </a>
-        <a href="mailto:brandonhanekom00@gmail.com">
-          <img
-            class="icons"
-            id="gmail"
-            src="Images/Gmail-logo.png"
-            alt="Brandon Hanekom's Gmail"
-          />
-        </a>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <a href="mailto:brandonhanekom00@gmail.com" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/in/brandon-hanekom-b0b855231/" class="fa fa-linkedin"></a>
       </ul>
     </footer>
   </body>
