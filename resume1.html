@@ -22,6 +22,7 @@
       }
     </style>
 
+    <!---Script that fixed NavBar issues.-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link
@@ -95,9 +96,9 @@
 
   <body>
     <div class="jumbotron" id="home">
-      <picture id="profilePhoto">
-        <source media="(max-width: 650px)" srcset="">
-        <img src="" alt="Resume photo.">
+      <picture>
+        <source media="(max-width: 650px)" srcset="./Images/ResumePhoto2-mobile.jpg">
+        <img src="./Images/ResumePhoto2.jpg" id="profilePhoto" alt="Resume photo.">
     </picture>
 
       <h1 class="styling">Brandon Hanekom</h1>
@@ -109,7 +110,8 @@
         >View</a
       >
     </div>
-
+    
+    <!--Grid helped with Bootstrap overlapping issue when it can to Viewport.-->
     <main class="main">
       <style>
         #grid {
@@ -229,6 +231,7 @@
     <footer>
       <h3 class="styling">Contact Me Here</h3>
       <ul>
+        <!--Stylesheet helped create Social Media Icons without the use of Images.-->
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
